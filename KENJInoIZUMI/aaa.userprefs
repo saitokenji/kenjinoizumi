@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TextManager.js">
+    <Files>
+      <File FileName="Assets/Resources/metaio/tracking.xml.bytes" Line="89" Column="24" />
+      <File FileName="Assets/Scripts/TextManager.js" Line="40" Column="2" />
+      <File FileName="Assets/Scripts/TweetScript.js" Line="21" Column="12" />
+      <File FileName="Assets/Scripts/GUIManager.js" Line="40" Column="5" />
+      <File FileName="Assets/Scripts/animManager.js" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

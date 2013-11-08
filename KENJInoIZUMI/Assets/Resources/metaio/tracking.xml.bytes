@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+<TrackingData>
+	<Sensors>
+		<Sensor type="FeatureBasedSensorSource" subtype="fast">
+			<SensorID>FeatureTracking1</SensorID>
+
+			<Parameters>
+				<FeatureBasedParameters>
+				</FeatureBasedParameters>
+			</Parameters>
+
+			
+			
+			<SensorCOS>
+				<SensorCosID>Patch1</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="180" heightMM="240">toilet.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch2</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="180" heightMM="182">toilet1f.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch3</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="180" heightMM="200">toilet3.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			
+			<SensorCOS>
+				<SensorCosID>Patch4</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="227" heightMM="240">Duchamp_FountaineH227.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch5</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="200" heightMM="208">toilet_hiroikeW200.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch6</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="229" heightMM="257">toilet4_W229.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch7</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="242" heightMM="304">toilet5_W242.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			
+			<SensorCOS>
+				<SensorCosID>Patch8</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="244" heightMM="325">toilet6_W244.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch9</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="244" heightMM="325">toilet7_W244.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			<SensorCOS>
+				<SensorCosID>Patch10</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="244" heightMM="325">toilet8_W244.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+			
+			
+			
+			<SensorCOS>
+				<SensorCosID>Patch11</SensorCosID>
+				<Parameters>
+					<referenceImage widthMM="132" heightMM="197">sampleToile_W132.png</referenceImage>
+				</Parameters>
+			</SensorCOS>
+
+
+		</Sensor>
+	</Sensors>
+	<Connections>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch1</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch2</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch3</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch4</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch5</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch6</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch7</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch8</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch9</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch10</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		
+		<COS>
+			<COSName>MarkerlessCOS</COSName>
+			<Fuser type="SmoothingFuser">
+				<Parameters>
+					<!-- Alpha is in the range [0...1] and determines how strong a new pose is.
+				  alpha = 0.9: less smoothing
+				  alpha = 0.1: alot smoothing-->
+					<AlphaRotation>0.5</AlphaRotation> 
+					<AlphaTranslation>0.8</AlphaTranslation>
+					<!-- if we lose tracking, keep the old pose for several frames -->
+					<KeepPoseForNumberOfFrames>0</KeepPoseForNumberOfFrames>
+				</Parameters>
+			</Fuser>
+			<SensorSource trigger="1">
+				<SensorID>FeatureTracking1</SensorID>
+				<SensorCosID>Patch11</SensorCosID>
+				<HandEyeCalibration>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</HandEyeCalibration>
+				<COSOffset>
+					<TranslationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+					</TranslationOffset>
+					<RotationOffset>
+						<x>0</x>
+						<y>0</y>
+						<z>0</z>
+						<w>1</w>
+					</RotationOffset>
+				</COSOffset>
+			</SensorSource>
+		</COS>
+		
+		
+		
+	</Connections>
+</TrackingData>
